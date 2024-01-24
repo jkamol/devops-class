@@ -1,0 +1,13 @@
+k8s_master:
+  hosts:
+    master:
+      ansible_connection: local
+
+k8s_nodes:
+  hosts:
+    worker1:
+      ansible_connection: ssh
+      ansible_user: ubuntu
+    worker2:
+      ansible_connection: ssh
+      ansible_user: ubuntu
